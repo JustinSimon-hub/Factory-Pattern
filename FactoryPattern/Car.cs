@@ -6,12 +6,8 @@ using System.Threading.Tasks;
 
 namespace FactoryPattern
 {
-    public interface ICarFactory
+    public class Car
     {
-        public int NumberOfTires { get; set; }
 
     }
 }
-
-
-
