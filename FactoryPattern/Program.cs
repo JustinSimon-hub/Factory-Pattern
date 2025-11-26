@@ -7,9 +7,12 @@ namespace FactoryPattern
         static void Main(string[] args)
         {
             Console.WriteLine("How many tires does your vehicle have?");
-            string car = Console.ReadLine();
+            int tireCount = Convert.ToInt32(Console.ReadLine());
 
-
+            
+            ICarFactory vehicle = VehicleFactory.GetVehicle(tireCount);
+            
+            vehicle.Drive();
 
 
 

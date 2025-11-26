@@ -8,7 +8,6 @@ namespace FactoryPattern
 {
     public class Car: ICarFactory
     {
-        public int NumberOfTires { get; set; }
 
         public void Drive()
         {
